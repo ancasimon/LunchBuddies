@@ -15,10 +15,9 @@ namespace LunchBuddies
             LastName = lastName;
         }
 
-        public void Eat()
+        public void Eat(Restaurant restaurant)
         {
-            var selectedRestaurant = new Restaurant();
-            Console.WriteLine($"{FirstName} {LastName} is currently eating at {selectedRestaurant}");
+            Console.WriteLine($"{FirstName} {LastName} is currently eating at {restaurant.Name}");
         }
     }
 }

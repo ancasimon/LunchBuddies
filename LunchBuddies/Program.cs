@@ -8,9 +8,10 @@ namespace LunchBuddies
         {
             var newBuddy = new LunchBuddy("Anna", "Smith");
 
-            //var restaurant = new Restaurant();
+            var restaurant1 = new Restaurant();
+            Console.WriteLine($"{restaurant1.Name} is the name of the selected restaurant!");
 
-            newBuddy.Eat();
+            newBuddy.Eat(restaurant1);
             
         }
     }
