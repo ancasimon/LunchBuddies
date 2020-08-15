@@ -17,28 +17,36 @@ namespace LunchBuddies
 
 
         //version 1:
-        //public void Eat(Restaurant restaurant)
-        //{
-        //    Console.WriteLine($"{FirstName} {LastName} is currently eating at {restaurant.Name}.");
-        //}
+        public void Eat(Restaurant restaurant)
+        {
+            Console.WriteLine($"Method 1: {FirstName} {LastName} is currently eating at {restaurant.Name}.");
+        }
 
         //version 2:
-        //public void Eat(Restaurant restaurant, string food)
-        //{
-        //    Console.WriteLine($"{FirstName} {LastName} is currently eating {food} from {restaurant.Name} at the desk.");
-        //}
+        public void Eat(Restaurant restaurant, string food)
+        {
+            Console.WriteLine($"Method 2: {FirstName} {LastName} is currently eating {food} from {restaurant.Name} at the office.");
+        }
 
         //version 3:
-        //public void Eat(Restaurant restaurant, List<LunchBuddy> companions)
-        //{
-        //    //Console.WriteLine($"My budy, {FirstName}, is currently eating at {restaurant.Name}.");
-        //    Console.WriteLine($"My buddies are currently at {restaurant.Name}: ");
-        //}
+        public void Eat(Restaurant restaurant, List<LunchBuddy> companions)
+        {
+            Console.WriteLine($"Method 3: {FirstName} is currently eating lunch at {restaurant.Name} with a few buddies: ");
+            foreach (var name in companions)
+            {
+                Console.WriteLine($"{name.FirstName}");
+            }
+        }
 
         //version 4:
         public void Eat(Restaurant restaurant, string food, List<LunchBuddy> companions)
         {
-            Console.WriteLine($"My budy, {FirstName}, just ordered {food} at {restaurant.Name}.");
+            Console.WriteLine($"Method 4: {FirstName} is currently eating {food} at {restaurant.Name} with a few buddies: ");
+            foreach (var name in companions)
+            {
+                Console.WriteLine($"{name.FirstName}");
+            }
+
         }
 
 
